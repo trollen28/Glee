@@ -6,16 +6,16 @@
 .header {
     padding: 45px 0;
 
+    &__container {
+        max-width: 1800px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 }
-
-.logo {}
-
-.logo__img {}
 
 .menu {
     display: flex;
@@ -29,12 +29,21 @@
         font-size: 15px;
         color: #436372;
         padding-bottom: 5px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         transition: border-bottom 0.3s;
-    }
+        outline: transparent;
 
-    &__link:hover {
-        border-bottom: 1px solid #436372;
+        &:hover {
+            border-bottom: 1px solid #436372;
+        }
+
+        &:focus {
+            border: 1px solid #436372;
+        }
+
+        &:active {
+            color: $default;
+        }
     }
 }
 
@@ -42,28 +51,41 @@
     display: flex;
 
     &__search-link {
-        padding: 17px;
         background-color: #edf1f4;
-        border-radius: 50%;
-        margin-right: 20px;
+        line-height: 55px;
     }
 
-    &__search-icon {
-        width: 16px;
-        height: 16px;
-    }
-
-    &__menu-link {
-        padding: 15px;
+    &__menu-btn {
         background-color: #a3bbc8;
+        line-height: 60px;
+        border: none;
+    }
+
+    &__search-link,
+    &__menu-btn {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    &__search-link,
+    &__menu-btn,
+    &__quantity {
         border-radius: 50%;
+    }
+
+    &__search-link,
+    &__wrap {
+        margin-right: 20px;
     }
 
     &__wrap {
         display: flex;
         background-color: #fcd7b6;
-        padding: 12px 40px 7px;
-        margin-right: 20px;
+        height: 50px;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
         border-top-left-radius: 15% 50%;
         border-bottom-left-radius: 15% 50%;
         border-top-right-radius: 15% 50%;
@@ -71,7 +93,7 @@
     }
 
     &__link {
-        padding: 7px 0;
+        padding-top: 10px;
         position: relative;
     }
 
@@ -81,39 +103,143 @@
         border-right: solid 1px #fde7d3
     }
 
-    &__icon {
-        transition: transform 0.3s;
-    }
-
-    &__icon:hover {
-        transform: scale(1.2);
-    }
-
-    &__quantity{
+    &__quantity {
         position: absolute;
         @extend %dmsans-400;
         font-size: 10px;
         color: #243f4d;
         background-color: #fff;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
         top: 0;
         right: -8px;
         text-align: center;
         line-height: 16px;
+        width: 16px;
+        height: 16px;
     }
 
-    &__quantity--first{
+    &__quantity--first {
         right: 14px;
+    }
+}
+
+.footer {
+    padding: 75px 0 35px;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $footer;
+
+    &__container {
+        max-width: 1200px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #dae4e9;
+    }
+
+    &__logo,
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__contacts,
+    &__services,
+    &__account {
+        max-width: 200px;
+    }
+
+    &__form {
+        max-width: 270px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 16px;
+        padding-top: 15px;
+        color: #1f2044;
+        text-transform: uppercase;
+    }
+
+    &__phone,
+    &__email {
+        display: block;
+    }
+
+    &__item,
+    &__address,
+    &__phone {
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+    }
+
+    &__input,
+    &__button {
+        height: 38px;
+        border: none;
+        @extend %dmsans-400;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    &__input {
+        max-width: 170px;
+        color: #234969;
+        background-color: #fef7f0;
+    }
+
+    &__button {
+        max-width: 100px;
+        background-color: $default;
+        color: #fff;
+        margin-left: -5px;
+    }
+
+    &__button,
+    &__phone,
+    &__email,
+    &__link,
+    &__nav-link {
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: border 0.3s, color 0.3s;
+    }
+
+    &__button,
+    &__phone,
+    &__email,
+    &__link,
+    &__nav-link {
+        &:hover {
+            color: $title;
+        }
+
+        &:focus {
+            border: 1px solid $title;
+        }
+
+        &:active {
+            color: $subtitle;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__border,
+    &__nav-link:not(:last-child) {
+        margin-right: 12px;
     }
 
 }
-
-.user-nav__link {}
-
-.user-nav__icon {}
-
 
 
 @import 'media';
