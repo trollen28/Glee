@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -27,18 +28,18 @@
     &__link {
         @extend %rubik-500;
         font-size: 15px;
-        color: #436372;
+        color: $text;
         padding-bottom: 5px;
         border: 1px solid transparent;
         transition: border-bottom 0.3s;
         outline: transparent;
 
         &:hover {
-            border-bottom: 1px solid #436372;
+            border-bottom: 1px solid $text;
         }
 
         &:focus {
-            border: 1px solid #436372;
+            border: 1px solid $text;
         }
 
         &:active {
@@ -56,9 +57,10 @@
     }
 
     &__menu-btn {
-        background-color: #a3bbc8;
+        background-color: $background;
         line-height: 60px;
         border: none;
+        cursor: pointer;
     }
 
     &__search-link,
@@ -72,6 +74,27 @@
     &__menu-btn,
     &__quantity {
         border-radius: 50%;
+    }
+
+    &__search-link svg,
+    &__link svg,
+    &__menu-btn svg,
+    &__quantity {
+        transition: transform 0.3s;
+    }
+
+    &__search-link:hover svg,
+    &__link:hover svg,
+    &__menu-btn:hover svg,
+    &__link:hover .user-nav__quantity {
+        transform: scale(1.2);
+    }
+
+    &__search-link:active svg,
+    &__link:active svg,
+    &__menu-btn:active svg,
+    &__link:active .user-nav__quantity {
+        transform: scale(0.8);
     }
 
     &__search-link,
@@ -192,6 +215,7 @@
         max-width: 170px;
         color: #234969;
         background-color: #fef7f0;
+        border: 1px solid transparent;
     }
 
     &__button {
@@ -233,12 +257,95 @@
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__border,
     &__nav-link:not(:last-child) {
         margin-right: 12px;
     }
+}
 
+.slider {
+
+    &__inner{
+        position: relative;
+    }
+
+    &__item {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 1770px;
+        height: 820px;
+        padding-top: 225px;
+    }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 1;
+        color: $subtitle;
+        max-width: 470px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 18px;
+        color: $text;
+        max-width: 370px;
+        line-height: 1.7;
+    }
+
+    &__title,
+    &__text {
+        margin-bottom: 25px;
+    }
+
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %rubik-500;
+        font-size: 15px;
+        padding: 0 15px 0 25px;
+        max-width: 200px;
+        height: 60px;
+        background-color: $background;
+        color: #fff;
+    }
+    
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    li:not(:last-child){
+        margin-right: 10px;
+    }
+    button{
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        @extend %rubik-500;
+        font-size: 12px;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+        &:active{
+            transform: scale(1);
+        }
+    }
+}
+
+.slick-active button{
+    background-color: #fff;
 }
 
 
