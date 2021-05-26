@@ -183,7 +183,7 @@
     &__title {
         @extend %dmsans-700;
         font-size: 16px;
-        padding-top: 15px;
+        padding-top: 12px;
         color: #1f2044;
         text-transform: uppercase;
     }
@@ -193,7 +193,7 @@
         display: block;
     }
 
-    &__item,
+    &__item:not(:last-child),
     &__address,
     &__phone {
         margin-bottom: 5px;
