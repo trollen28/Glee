@@ -61,6 +61,7 @@
         line-height: 60px;
         border: none;
         cursor: pointer;
+        padding: 0;
     }
 
     &__search-link,
@@ -94,7 +95,7 @@
     &__link:active svg,
     &__menu-btn:active svg,
     &__link:active .user-nav__quantity {
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
 
     &__search-link,
@@ -266,7 +267,7 @@
 
 .slider {
 
-    &__inner{
+    &__inner {
         position: relative;
     }
 
@@ -301,7 +302,7 @@
         margin-bottom: 25px;
     }
 
-    &__link{
+    &__link {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -313,19 +314,21 @@
         background-color: $background;
         color: #fff;
     }
-    
+
 }
 
-.slick-dots{
+.slick-dots {
     display: flex;
     justify-content: center;
     position: absolute;
     bottom: 45px;
     width: 100%;
-    li:not(:last-child){
+
+    li:not(:last-child) {
         margin-right: 10px;
     }
-    button{
+
+    button {
         border: none;
         width: 30px;
         height: 30px;
@@ -335,17 +338,218 @@
         font-size: 12px;
         cursor: pointer;
         transition: transform 0.3s, background-color 0.3s;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
         }
-        &:active{
+
+        &:active {
             transform: scale(1);
         }
     }
 }
 
-.slick-active button{
+.slick-active button {
     background-color: #fff;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    background-color: #fef7f0;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        max-width: 590px;
+        width: 100%;
+        padding: 45px 0;
+
+        &:not(:last-child) {
+            border-right: 1px solid #e8e4df;
+        }
+    }
+
+    &__descr {
+        padding-left: 50px;
+        position: relative;
+        max-width: 275px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            left: -30px;
+            top: 7px;
+        }
+    }
+
+    &__support {
+        max-width: 255px;
+
+        &::before {
+            background-image: url(../images/icons/Support.png);
+        }
+    }
+
+    &__delivery {
+        &::before {
+            background-image: url(../images/icons/Delivery.png);
+            width: 60px;
+            height: 40px;
+            left: -35px;
+        }
+    }
+
+    &__payment {
+        &::before {
+            background-image: url(../images/icons/Payment.png);
+        }
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: #414141;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        @extend %dmsans-400;
+        font-size: 16px;
+        color: #585858;
+        line-height: 1.8;
+    }
+}
+
+.products {
+    padding-top: 70px;
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+
+    &__menu-item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 0;
+        color: #8b8b8b;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s, color 0.3s, transform 0.3s;
+
+        &:hover {
+            border-bottom: 1px solid $title;
+        }
+
+        &:focus {
+            color: $title;
+        }
+
+        &:active {
+            transform: scale(0.9)
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px 40px;
+    }
+
+    &__item {
+        max-width: 270px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        text-align: center;
+        padding: 30px 0 35px;
+    }
+
+    &__img-box {
+        position: relative;
+        overflow: hidden;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 50px;
+
+        &:hover .products__link-box {
+            transform: translateY(0);
+        }
+    }
+
+    &__image {}
+
+    &__link-box {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 15px;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.3s;
+        transform: translateY(200%);
+    }
+
+    &__link {
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        line-height: 54px;
+        transition: background-color 0.3s, fill 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        &:hover {
+            background-color: #a3bbc8;
+        }
+
+        &:hover {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link svg {
+        path {
+            transition: fill 0.3s;
+        }
+
+    }
+
+    &__name {
+        @extend %dmsans-500;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: $subtitle;
+    }
+}
+
+
+
+.title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 
