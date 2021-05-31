@@ -1,0 +1,128 @@
+.footer {
+    padding: 75px 0 35px;
+    font-family: $rubik;
+    font-weight: $rubik400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $white400;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #dae4e9;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    .form__title,
+    &__title {
+        font-family: $DMsans;
+        font-weight: $DMsans700;
+        font-size: 16px;
+        padding-top: 12px;
+        color: $blue700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__contacts,
+    &__services,
+    &__account {
+        max-width: 200px;
+    }
+
+    &__item:not(:last-child),
+    &__address,
+    &__phone {
+        margin-bottom: 5px;
+    }
+
+    .form__button,
+    &__phone,
+    &__email,
+    &__link,
+    &__nav-link {
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: border 0.3s, color 0.3s;
+    }
+
+    .form__button,
+    &__phone,
+    &__email,
+    &__link,
+    &__nav-link {
+        &:hover {
+            color: $white700;
+        }
+
+        &:focus {
+            border: 1px solid $white700;
+        }
+
+        &:active {
+            color: $blue600;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__decor {
+        &:not(:last-child) {
+            margin-right: 24px;
+
+            &::after {
+                content: "|";
+                position: relative;
+                right: -11px;
+            }
+        }
+    }
+
+    .form {
+        max-width: 270px;
+
+        &__text {
+            margin-bottom: 35px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        &__input,
+        &__button {
+            height: 38px;
+            border: none;
+            font-family: $DMsans;
+            font-weight: $DMsans400;
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        &__input {
+            max-width: 170px;
+            color: $blue500;
+            background-color: #fef7f0;
+            border: 1px solid transparent;
+        }
+
+        &__button {
+            max-width: 100px;
+            background-color: $white300;
+            color: $white;
+            margin-left: -5px;
+        }
+    }
+}

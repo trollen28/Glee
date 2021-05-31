@@ -1,0 +1,207 @@
+.header {
+    padding: 45px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo__img {
+        object-fit: contain;
+    }
+
+    .menu {
+        display: flex;
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+
+        &__link {
+            font-family: $rubik;
+            font-weight: $rubik500;
+            font-size: 15px;
+            color: $blue400;
+            padding-bottom: 5px;
+            border: 1px solid transparent;
+            transition: border-bottom 0.3s;
+            outline: transparent;
+
+            &:hover {
+                border-bottom: 1px solid $blue400;
+            }
+
+            &:focus {
+                border: 1px solid $blue400;
+            }
+
+            &:active {
+                color: $white300;
+            }
+        }
+    }
+
+    .user-nav {
+        display: flex;
+
+        &__search {
+            background-color: $blue300;
+
+            &:focus {
+                background-color: $white300;
+            }
+        }
+
+        &__menu {
+            background-color: $white300;
+
+            &:focus {
+                background-color: $blue400;
+            }
+        }
+
+        &__cart {
+            position: relative;
+            display: block;
+            border-top-right-radius: 25px 50%;
+            border-bottom-right-radius: 25px 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                opacity: 0.4;
+                background-color: $white;
+                width: 1px;
+                height: 32px;
+                left: 0;
+            }
+        }
+
+        &__search,
+        &__menu,
+        &__like,
+        &__cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        &__search,
+        &__menu,
+        &__like,
+        &__cart {
+            &:hover {
+
+                .user-nav__lens,
+                .user-nav__btn,
+                .user-nav__heart,
+                .user-nav__basket,
+                .user-nav__quantity {
+                    transform: scale(1.2);
+                }
+            }
+
+            &:active {
+
+                .user-nav__lens,
+                .user-nav__btn,
+                .user-nav__heart,
+                .user-nav__basket,
+                .user-nav__quantity {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        &__search,
+        &__cart {
+            margin-right: 20px;
+        }
+
+        &__like,
+        &__cart {
+            position: relative;
+            height: 50px;
+            width: 90px;
+            background-color: $orange500;
+
+            &:focus {
+                background-color: $orange300;
+            }
+        }
+
+        &__like {
+            border-top-left-radius: 25px 50%;
+            border-bottom-left-radius: 25px 50%;
+        }
+
+        &__search,
+        &__menu {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__search,
+        &__menu,
+        &__quantity {
+            border-radius: 50%;
+        }
+
+        &__quantity {
+            position: absolute;
+            font-family: $DMsans;
+            font-weight: $DMsans400;
+            font-size: 10px;
+            color: $blue600;
+            background-color: $white;
+            top: 8px;
+            right: 25px;
+            text-align: center;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__lens {
+            width: 17px;
+            height: 17px;
+        }
+
+        &__heart {
+            width: 19px;
+            height: 18px;
+        }
+
+        &__btn {
+            width: 21px;
+            height: 22px;
+            fill: $white;
+        }
+
+        &__basket {
+            width: 20px;
+            height: 18px;
+        }
+
+        &__lens,
+        &__heart,
+        &__basket {
+            fill: $blue600;
+        }
+
+        &__lens,
+        &__heart,
+        &__basket,
+        &__quantity,
+        &__btn {
+            transition: transform 0.3s, fill 0.3s;
+        }
+    }
+}

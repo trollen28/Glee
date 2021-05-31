@@ -1,0 +1,110 @@
+.product-card {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    text-align: center;
+    padding: 27px 42px 38px;
+
+    &:hover {
+        .product-card__link-box {
+            transform: translateY(0);
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        width: 186px;
+        height: 195px;
+    }
+
+    &__image {
+        object-fit: contain;
+    }
+
+    &__link-box {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 15px;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.3s;
+        transform: translateY(200%);
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        transition: background-color 0.3s, fill 0.3s;
+        box-shadow: 0 0 10px rgba(37, 37, 37, 0.1);
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        &:hover {
+            background-color: $white300;
+
+            .product-card__lens,
+            .product-card__heart,
+            .product-card__basket {
+                fill: $white;
+            }
+        }
+
+        &:active {
+
+            .product-card__lens,
+            .product-card__heart,
+            .product-card__basket {
+                transform: scale(0.9);
+            }
+        }
+
+        &:focus {
+
+            .product-card__lens,
+            .product-card__heart,
+            .product-card__basket {
+                fill: $blue500;
+            }
+        }
+    }
+
+    &__lens {
+        width: 17px;
+        height: 17px;
+    }
+
+    &__heart {
+        width: 19px;
+        height: 18px;
+    }
+
+    &__basket {
+        width: 20px;
+        height: 18px;
+    }
+
+    &__lens,
+    &__heart,
+    &__basket {
+        fill: $white300;
+    }
+
+    &__name {
+        font-family: $DMsans;
+        font-weight: $DMsans500;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: $blue600;
+    }
+}
