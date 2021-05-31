@@ -1,36 +1,28 @@
-$footer: #7b7b7b;
-$default: #a3bbc8;
-$subtitle: #243f4d;
-$title: #191919;
-$text: #436372;
-$background: #a3bbc8;
+$white: #fff;
+$white300: #a3bbc8;
+$white350: #8b8b8b;
+$white400: #7b7b7b;
+$white500: #585858;
+$white600: #414141;
+$white700: #191919;
 
-%dmsans-700{
-    font-family: 'DMSans-Bold', sans-serif;
-    font-weight: 700;
-}
+$blue300: #edf1f4;
+$blue400: #436372;
+$blue500: #234969;
+$blue600: #243f4d;
+$blue700: #1f2044;
 
-%dmsans-500{
-    font-family: 'DMSans-Medium', sans-serif;
-    font-weight: 500;
-}
+$orange300: #fde3cc;
+$orange500: #fcd7b6;
 
-%dmsans-400{
-    font-family: 'DMSans-Regular', sans-serif;
-    font-weight: 400;
-}
+$DMsans: 'DMSans',sans-serif;
+$DMsans700: 700;
+$DMsans500: 500;
+$DMsans400: 400;
 
-%rubik-500{
-    font-family: 'Rubik-Medium', sans-serif;
-    font-weight: 500;
-}
+$rubik:'Rubik',sans-serif;
+$rubik500: 500;
+$rubik400: 400;
 
-%rubik-400{
-    font-family: 'Rubik-Regular', sans-serif;
-    font-weight: 400;
-}
-
-%poppins-700{
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
-}
+$poppins:'Poppins',sans-serif;
+$poppins700: 700;
