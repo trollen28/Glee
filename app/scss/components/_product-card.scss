@@ -3,6 +3,7 @@
     text-align: center;
     padding: 27px 42px 38px;
     transition: transform 0.3s;
+    position: relative;
 
     &:hover {
         transform: translateY(-5px);
@@ -10,6 +11,15 @@
         .product-card__box {
             transform: translateY(0);
         }
+    }
+
+    &__link {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 
     &__inner {
@@ -40,7 +50,7 @@
         transform: translateY(200%);
     }
 
-    &__link {
+    &__btn {
         background-color: $white;
         width: 45px;
         height: 45px;
