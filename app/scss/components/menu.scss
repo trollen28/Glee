@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+
+  &__item {
+      &:not(:last-child) {
+          margin-right: 35px;
+      }
+  }
+
+  &__link {
+      font-family: $rubik;
+      font-weight: $rubik500;
+      font-size: 15px;
+      color: $blue400;
+      padding-bottom: 5px;
+      border: 1px solid transparent;
+      transition: border-bottom 0.3s;
+      outline: transparent;
+
+      &:hover {
+          border-bottom: 1px solid $blue400;
+      }
+
+      &:focus {
+          border: 1px solid $blue400;
+      }
+
+      &:active {
+          color: $white300;
+      }
+  }
+}

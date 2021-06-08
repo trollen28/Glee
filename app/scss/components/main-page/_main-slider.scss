@@ -1,0 +1,178 @@
+.main-slider {
+
+  &__inner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $rubik;
+    font-weight: $rubik500;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    height: 820px;
+    justify-content: center;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 72px;
+    line-height: 1;
+    color: $blue600;
+    max-width: 470px;
+    text-transform: uppercase;
+    @include lines-3;
+  }
+
+  &__text {
+    font-weight: $rubik400;
+    font-size: 18px;
+    color: $blue400;
+    max-width: 370px;
+    line-height: 1.7;
+    @include lines-5;
+  }
+
+  &__name,
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__right {
+    width: 24px;
+    height: 10px;
+    fill: $white;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    button {
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $orange300;
+      font-family: $rubik;
+      font-size: 12px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+
+      &:focus {
+        background-color: $white;
+      }
+    }
+  }
+
+  .slick-active button {
+    background-color: $white;
+  }
+}
+
+.services {
+  &__info {
+    display: flex;
+    align-items: baseline;
+    background-color: #fef7f0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    max-width: 590px;
+    width: 100%;
+    height: 170px;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid #e8e4df;
+    }
+  }
+
+  &__descr {
+    padding-left: 50px;
+    position: relative;
+    max-width: 275px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      left: -30px;
+      top: 7px;
+    }
+  }
+
+  &__support {
+    max-width: 255px;
+
+    &::before {
+      background-image: url(../images/sprite.svg#time);
+    }
+  }
+
+  &__delivery {
+    &::before {
+      background-image: url(../images/sprite.svg#delivery-truck);
+      width: 55px;
+      height: 35px;
+      left: -35px;
+    }
+  }
+
+  &__payment {
+    &::before {
+      background-image: url(../images/sprite.svg#credit-card);
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $white600;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-weight: $DMsans400;
+    color: $white500;
+    line-height: 1.8;
+
+    p {
+      overflow: hidden;
+      @include lines-3;
+    }
+  }
+}

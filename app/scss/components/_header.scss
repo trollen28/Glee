@@ -8,41 +8,10 @@
     }
 
     .logo__img {
-        object-fit: contain;
+        object-fit: cover;
     }
 
-    .menu {
-        display: flex;
-
-        &__item {
-            &:not(:last-child) {
-                margin-right: 35px;
-            }
-        }
-
-        &__link {
-            font-family: $rubik;
-            font-weight: $rubik500;
-            font-size: 15px;
-            color: $blue400;
-            padding-bottom: 5px;
-            border: 1px solid transparent;
-            transition: border-bottom 0.3s;
-            outline: transparent;
-
-            &:hover {
-                border-bottom: 1px solid $blue400;
-            }
-
-            &:focus {
-                border: 1px solid $blue400;
-            }
-
-            &:active {
-                color: $white300;
-            }
-        }
-    }
+    @import './components/menu';
 
     .user-nav {
         display: flex;
@@ -51,6 +20,14 @@
             background-color: $blue300;
 
             &:focus {
+                background-color: $blue400;
+            }
+
+            &:active {
+                background-color: $white400;
+            }
+
+            &:hover {
                 background-color: $white300;
             }
         }
@@ -59,6 +36,14 @@
             background-color: $white300;
 
             &:focus {
+                background-color: $blue500;
+            }
+
+            &:active {
+                background-color: $blue300;
+            }
+
+            &:hover {
                 background-color: $blue400;
             }
         }
@@ -80,8 +65,6 @@
             }
         }
 
-        &__search,
-        &__menu,
         &__like,
         &__cart {
             display: flex;
@@ -129,8 +112,16 @@
             height: 50px;
             width: 90px;
             background-color: $orange500;
+            
+            &:active {
+                background-color: $blue300;
+            }
 
             &:focus {
+                background-color: $blue400;
+            }
+
+            &:hover {
                 background-color: $orange300;
             }
         }
@@ -140,14 +131,6 @@
             border-bottom-left-radius: 25px 50%;
         }
 
-        &__search,
-        &__menu {
-            width: 50px;
-            height: 50px;
-        }
-
-        &__search,
-        &__menu,
         &__quantity {
             border-radius: 50%;
         }

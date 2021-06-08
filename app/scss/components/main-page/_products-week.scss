@@ -1,0 +1,17 @@
+.products-week {
+
+    @import './components/product-card';
+    @import './components/products-filter';
+
+    padding-top: 70px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px 40px;
+    }
+
+    .mixitup-control-active {
+        color: $white700;
+    }
+}

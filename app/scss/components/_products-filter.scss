@@ -1,0 +1,34 @@
+.products-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0;
+    color: $white350;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s, transform 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $white700;
+    }
+
+    &:focus {
+      color: $white700;
+    }
+
+    &:active {
+      transform: scale(0.9)
+    }
+  }
+}

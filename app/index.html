@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glee</title>
-    <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,13 +19,13 @@
     <div class="container container--large">
         <nav class="header__inner">
             <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.png" alt="logotype" style="width: 150px; height: 40px;">
+                <img class="logo__img" src="images/logo.png" alt="logo" width="150" height="40">
             </a>
 
             <ul class="menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Home
-                        <span class="menu__add">+</span>
+                    <a class="menu__link" href="#">
+                        Home<span>+</span>
                     </a>
                 </li>
                 <li class="menu__item">
@@ -36,8 +35,8 @@
                     <a class="menu__link" href="#">Services</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Pages
-                        <span class="menu__add">+</span>
+                    <a class="menu__link" href="#">
+                        Pages<span>+</span>
                     </a>
                 </li>
                 <li class="menu__item">
@@ -49,7 +48,7 @@
             </ul>
 
             <div class="user-nav">
-                <button class="btn user-nav__search" type="button">
+                <button class="btn-circle user-nav__search" type="button">
                     <svg class="user-nav__lens">
                         <use xlink:href="images/sprite.svg#search-icon"></use>
                     </svg>
@@ -77,12 +76,12 @@
                         <span class="user-nav__quantity">14</span>
                     </a>
 
-                <button class="btn user-nav__menu" type="button">
+                <button class="btn-circle user-nav__menu" type="button">
                     <svg class="user-nav__btn">
                         <use xlink:href="images/sprite.svg#menu-icon"></use>
                     </svg>
 
-                    <span class="visually-hidden">Mobile menu</span>
+                    <span class="visually-hidden">Сlicking will open a menu with additional tools</span>
                 </button>
             </div>
         </nav>
@@ -92,407 +91,443 @@
     <main class="main">
 
         <section class="main-slider">
-            <h2 class="visually-hidden">Trendy products</h2>
-            <div class="container container--large">
-                <ul class="main-slider__inner">
-                    <li class="main-slider__item" style="background-image: url(images/slider/slider-bg.jpg);">
-                        <div class="container">
-                            <div class="main-slider__wrap">
-                                <div class="main-slider__title">smart and trendy</div>
+  <h2 class="visually-hidden">Trendy products</h2>
+  <div class="container container--large">
+    <ul class="main-slider__inner" style="background-image: url(images/slider/slider-bg.jpg);">
+      <li class="main-slider__item">
+        <div class="container">
+          <div class="main-slider__content">
+            <div class="main-slider__wrap">
+              <div class="main-slider__name">smart and trendy</div>
 
-                                <div class="main-slider__text">
-                                    <p> Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    </p>
-                                </div>
+              <div class="main-slider__text">
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+              </div>
 
-                                <a class="main-slider__link" href="#">Shop Now
-                                    <svg class="main-slider__right">
-                                        <use xlink:href="images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="main-slider__item" style="background-image: url(images/slider/slider-bg.jpg);">
-                        <div class="container">
-                            <div class="main-slider__wrap">
-                                <div class="main-slider__title">smart and trendy</div>
-
-                                <div class="main-slider__text">
-                                    <p> Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    </p>
-                                </div>
-
-                                <a class="main-slider__link" href="#">Shop Now
-                                    <svg class="main-slider__right">
-                                        <use xlink:href="images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="main-slider__item" style="background-image: url(images/slider/slider-bg.jpg);">
-                        <div class="container">
-                            <div class="main-slider__wrap">
-                                <div class="main-slider__title">smart and trendy</div>
-
-                                <div class="main-slider__text">
-                                    <p> Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                    </p>
-                                </div>
-
-                                <a class="main-slider__link" href="#">Shop Now
-                                    <svg class="main-slider__right">
-                                        <use xlink:href="images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
+              <a class="btn-square main-slider__link" href="#">Shop Now
+                <svg class="main-slider__right">
+                  <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
-        </section>
+            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+          </div>
+        </div>
+      </li>
 
-        <section class="services">
-            <div class="container container--large">
-                <ul class="services__info">
-                    <li class="services__item">
-                        <div class="services__descr services__support">
-                            <h3 class="services__title">
-                                Support 24/7.
-                            </h3>
+      <li class="main-slider__item">
+        <div class="container">
+          <div class="main-slider__content">
+            <div class="main-slider__wrap">
+              <div class="main-slider__name">smart and trendy</div>
 
-                            <div class="services__text">
-                                <p>Contact us 24 hours a day, 7 days a week.</p>
-                            </div>
-                        </div>
-                    </li>
+              <div class="main-slider__text">
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+              </div>
 
-                    <li class="services__item">
-                        <div class="services__descr services__delivery">
-                            <h3 class="services__title">
-                                Delivery.
-                            </h3>
+              <a class="btn-square main-slider__link" href="#">Shop Now
+                <svg class="main-slider__right">
+                  <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+          </div>
+        </div>
+      </li>
 
-                            <div class="services__text">
-                                <p>Free shipping on all US order.</p>
-                            </div>
-                        </div>
-                    </li>
+      <li class="main-slider__item">
+        <div class="container">
+          <div class="main-slider__content">
+            <div class="main-slider__wrap">
+              <div class="main-slider__name">smart and trendy</div>
 
-                    <li class="services__item">
-                        <div class="services__descr services__payment">
-                            <div class="services__title">
-                                100% Payment secure.
-                            </div>
+              <div class="main-slider__text">
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+              </div>
 
-                            <div class="services__text">
-                                <p>We ensure secure payment with PEV.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+              <a class="btn-square main-slider__link" href="#">Shop Now
+                <svg class="main-slider__right">
+                  <use xlink:href="images/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="services">
+    <div class="container container--large">
+      <ul class="services__info">
+        <li class="services__item">
+          <div class="services__descr services__support">
+            <h3 class="services__title">
+              Support 24/7.
+            </h3>
+
+            <div class="services__text">
+              <p>Contact us 24 hours a day, 7 days a week.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="services__item">
+          <div class="services__descr services__delivery">
+            <h3 class="services__title">
+              Delivery.
+            </h3>
+
+            <div class="services__text">
+              <p>Free shipping on all US order.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="services__item">
+          <div class="services__descr services__payment">
+            <div class="services__title">
+              100% Payment secure.
             </div>
 
-            <div class="products-week">
-                <div class="container">
-                    <h2 class="title">Products of the week</h2>
-
-                    <ul class="products-week__menu">
-                        <li class="products-week__menu-item">
-                            <button class="products-week__btn" type="button" data-filter="all">All</button>
-                        </li>
-
-                        <li class="products-week__menu-item">
-                            <button class="products-week__btn" type="button"
-                                data-filter=".category-a">Furnitures</button>
-                        </li>
-
-                        <li class="products-week__menu-item">
-                            <button class="products-week__btn" type="button" data-filter=".category-b">Chairs</button>
-                        </li>
-
-                        <li class="products-week__menu-item">
-                            <button class="products-week__btn" type="button" data-filter=".category-c">Lighting</button>
-                        </li>
-
-                        <li class="products-week__menu-item">
-                            <button class="products-week__btn" type="button" data-filter=".category-d">Decor</button>
-                        </li>
-                    </ul>
-
-                    <ul class="products-week__items">
-                        <li class="products-week__item mix category-a">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/1.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-b">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/2.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-a">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/3.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-b">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/4.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-c">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/5.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-c">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/6.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-a category-c">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/7.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                        <li class="products-week__item mix category-b category-d">
-                            <article class="product-card">
-                                <div class="product-card__img-box">
-                                    <img class="product-card__image" src="images/products/8.png" alt="products"
-                                        style="width: 186px; height: 195px;">
-
-                                    <div class="product-card__link-box">
-                                        <a class="product-card__link" href="#">
-                                            <svg class="product-card__lens">
-                                                <use xlink:href="images/sprite.svg#search-icon"></use>
-                                            </svg>
-                                        </a>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__basket">
-                                                <use xlink:href="images/sprite.svg#basket-icon"></use>
-                                            </svg>
-                                        </button>
-
-                                        <button class="btn product-card__link" type="button">
-                                            <svg class="product-card__heart">
-                                                <use xlink:href="images/sprite.svg#like-icon"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <h3 class="product-card__name">Wooden radio</h3>
-
-                                <span class="product-card__price">$29.00</span>
-                            </article>
-                        </li>
-
-                    </ul>
-                </div>
+            <div class="services__text">
+              <p>We ensure secure payment with PEV.</p>
             </div>
-        </section>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+        <section class="products-week">
+  <div class="container">
+    <h2 class="title">Products of the week</h2>
+
+    <ul class="products-filter">
+      <li class="products-filter__item">
+        <button class="products-filter__btn" type="button" data-filter="all">All</button>
+      </li>
+
+      <li class="products-filter__item">
+        <button class="products-filter__btn" type="button" data-filter=".category-a">Furnitures</button>
+      </li>
+
+      <li class="products-filter__item">
+        <button class="products-filter__btn" type="button" data-filter=".category-b">Chairs</button>
+      </li>
+
+      <li class="products-filter__item">
+        <button class="products-filter__btn" type="button" data-filter=".category-c">Lighting</button>
+      </li>
+
+      <li class="products-filter__item">
+        <button class="products-filter__btn" type="button" data-filter=".category-d">Decor</button>
+      </li>
+    </ul>
+
+    <ul class="products-week__items">
+      <li class="products-week__item mix category-a">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/1.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-b">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/2.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-a">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/3.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-b">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/4.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-c">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/5.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-c">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/6.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-a category-c">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/7.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+      <li class="products-week__item mix category-b category-d">
+        <article class="product-card">
+          <a class="product-card__wrap" href="#">
+            <div class="product-card__inner">
+              <img class="product-card__image" src="images/products/8.png" alt="products">
+
+              <div class="product-card__box">
+                <a class="btn-circle product-card__link" href="#">
+                  <svg class="product-card__lens">
+                    <use xlink:href="images/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__basket">
+                    <use xlink:href="images/sprite.svg#basket-icon"></use>
+                  </svg>
+                </button>
+
+                <button class="btn-circle product-card__link" type="button">
+                  <svg class="product-card__heart">
+                    <use xlink:href="images/sprite.svg#like-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <h3 class="product-card__name">Wooden radio</h3>
+
+            <p class="product-card__price">
+              <span>$</span>29.00
+            </p>
+          </a>
+        </article>
+      </li>
+
+    </ul>
+  </div>
+</section>
 
     </main>
 
@@ -529,7 +564,7 @@
             <li class="footer__wrap">
                 <ul class="footer__services">
                     <li class="footer__item">
-                        <div class="footer__title">Services</div>
+                        <div class="footer__heading">Services</div>
                     </li>
 
                     <li class="footer__item">
@@ -557,7 +592,7 @@
             <li class="footer__wrap">
                 <ul class="footer__account">
                     <li class="footer__item">
-                        <div class="footer__title">Account</div>
+                        <div class="footer__heading">Account</div>
                     </li>
 
                     <li class="footer__item">
@@ -580,18 +615,18 @@
 
             <li class="footer__wrap">
                 <form class="form">
-                    <div class="form__title">newsletter</div>
+                    <div class="form__heading">newsletter</div>
 
                     <div class="form__text">
-                        <p>Subscribe by our newsletter and get update protidin.
+                        <p>
+                            Subscribe by our newsletter and get update protidin.
                         </p>
                     </div>
 
-                    <label class="visually-hidden" for="inputmail">String for entering email
-                    </label>
-                    <input class="form__input" type="email" name="email" placeholder="Email address" id="inputmail">
+                    <label class="visually-hidden" for="input-mail">String for entering email</label>
+                    <input class="form__input" type="email" name="email" placeholder="Email address" id="input-mail">
 
-                    <button class="form__button" type="submit">Subscribe</button>
+                    <button class="btn-square form__button" type="submit">Subscribe</button>
                 </form>
             </li>
         </ul>
@@ -601,7 +636,7 @@
                 <p>©2020 CopyRight Example. All rights reserved.</p>
             </div>
 
-            <ul class="footer__nav">
+            <ul class="menu footer__nav">
                 <li class="footer__decor">
                     <a class="footer__nav-link" href="#">Home</a>
                 </li>
