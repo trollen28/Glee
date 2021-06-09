@@ -9,9 +9,74 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px 40px;
+        margin-bottom: 190px;
     }
 
     .mixitup-control-active {
         color: $white700;
+    }
+
+    &__adds {
+        display: flex;
+    }
+
+    &__product {
+        max-width: 870px;
+        height: 390px;
+        background-color: $orange200;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: $blue600;
+        padding: 50px 50px 50px 400px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__inner {
+        max-width: 350px;
+        position: relative;
+    }
+
+    &__image {
+        content: '';
+        position: absolute;
+        left: -270px;
+        top: -180px;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-size: 26px;
+        margin-bottom: 25px;
+        @include lines-2;
+    }
+
+    &__descr,
+    &__btn {
+        font-family: $rubik;
+    }
+
+    &__descr {
+        font-weight: $rubik400;
+        margin-bottom: 35px;
+        @include lines-5;
+    }
+
+    &__btn {
+        font-weight: $rubik500;
+        color: $blue400;
+        background-color: $orange200;
+        border: 1px solid $blue400;
+        border-radius: 5px;
+        padding: 22px 18px;
+        max-width: 180px;
+        width: 100%;
+
+        svg {
+            fill: $blue400;
+        }
     }
 }

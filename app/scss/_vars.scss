@@ -12,6 +12,7 @@ $blue500: #234969;
 $blue600: #243f4d;
 $blue700: #1f2044;
 
+$orange200: #feefe2;
 $orange300: #fde3cc;
 $orange500: #fcd7b6;
 
@@ -34,9 +35,23 @@ $poppins700: 700;
   overflow: hidden;
 }
 
+@mixin lines-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @mixin lines-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin lines-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
