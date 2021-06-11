@@ -7,6 +7,15 @@ $(function () {
         autoplaySpead: 5000,
     });
 
+    $('.insights__box').slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplaySpead: 5000,
+    });
+
     var containerEl1 = document.querySelector('[data-ref="container-1"]');
     var containerEl2 = document.querySelector('[data-ref="container-2"]');
 

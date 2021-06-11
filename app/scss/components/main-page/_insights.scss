@@ -1,10 +1,16 @@
 .insights {
 
   &__top {
-    display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 45px;
+  }
+
+  &__top,
+  &__box,
+  &__partners,
+  &__content {
+    display: flex;
   }
 
   &__title {
@@ -57,31 +63,27 @@
   }
 
   &__content {
-    display: flex;
     justify-content: space-between;
   }
 
-  &__partners{
+  &__partners {
     position: relative;
     height: 435px;
     width: 100%;
     background-color: $orange500o2;
     margin-top: -182px;
     z-index: -1;
-    display: flex;
     align-items: flex-end;
   }
 
-  &__box{
+  &__box {
     height: 255px;
     width: 100%;
-    display: flex;
     align-items: center;
   }
 
-  &__logo{
-    &:not(:last-child){
-      margin-right: 100px;
-    }
+  &__logo {
+    object-fit: contain;
+    margin: 0 auto;
   }
 }
