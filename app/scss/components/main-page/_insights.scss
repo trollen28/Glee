@@ -1,0 +1,87 @@
+.insights {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__btn {
+    font-size: 16px;
+    color: $white700;
+    padding: 5px;
+    background-color: transparent;
+    max-width: 90px;
+    width: 100%;
+    transition: border 0.3s, color 0.3s;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $blue500;
+      border: 1px solid $blue500;
+
+      .insights__right {
+        fill: $blue500;
+      }
+    }
+
+    &:active {
+      color: $orange500;
+      border: 1px solid $orange500;
+
+      .insights__right {
+        fill: $orange500;
+      }
+    }
+
+    &:focus {
+      color: $blue400;
+      border: 1px solid $blue400;
+
+      .insights__right {
+        fill: $blue400;
+      }
+    }
+  }
+
+  &__right {
+    width: 7px;
+    height: 12px;
+    fill: $white700;
+    transition: fill 0.3s;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__partners{
+    position: relative;
+    height: 435px;
+    width: 100%;
+    background-color: $orange500o2;
+    margin-top: -182px;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__box{
+    height: 255px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo{
+    &:not(:last-child){
+      margin-right: 100px;
+    }
+  }
+}

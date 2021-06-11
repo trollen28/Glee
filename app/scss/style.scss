@@ -4,9 +4,14 @@
 @import 'libs';
 @import 'global';
 
-@import './components/header';
+@import './components/products-filter';
+@import './components/product-card';
+@import './components/insight-card';
 
+@import './components/header';
 @import './components/main-page/main-slider';
 @import './components/main-page/products-week';
+@import './components/main-page/design';
+@import './components/main-page/insights';
 
 @import './components/footer';

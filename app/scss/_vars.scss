@@ -1,20 +1,25 @@
 $white: #fff;
+$white250: #f8f8f8;
+$white290: #e0e0e0;
 $white300: #a3bbc8;
 $white350: #8b8b8b;
 $white400: #7b7b7b;
 $white500: #585858;
 $white600: #414141;
+$white650: #262626;
 $white700: #191919;
 
 $blue300: #edf1f4;
 $blue400: #436372;
 $blue500: #234969;
 $blue600: #243f4d;
+$blue650: #222933;
 $blue700: #1f2044;
 
 $orange200: #feefe2;
 $orange300: #fde3cc;
 $orange500: #fcd7b6;
+$orange500o2: rgba($color: #fcd7b6, $alpha: 0.2);
 
 $DMsans: 'DMSans',sans-serif;
 $DMsans700: 700;
@@ -61,4 +66,11 @@ $poppins700: 700;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@function	 max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function	 max($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
