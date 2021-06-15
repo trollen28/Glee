@@ -36,21 +36,21 @@
       }
     }
 
-    &:active {
-      color: $orange500;
-      border: 1px solid $orange500;
-
-      .insights__right {
-        fill: $orange500;
-      }
-    }
-
     &:focus {
       color: $blue400;
       border: 1px solid $blue400;
 
       .insights__right {
         fill: $blue400;
+      }
+    }
+
+    &:active {
+      color: $orange500;
+      border: 1px solid $orange500;
+
+      .insights__right {
+        fill: $orange500;
       }
     }
   }

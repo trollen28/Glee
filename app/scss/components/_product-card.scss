@@ -70,21 +70,21 @@
             }
         }
 
-        &:active {
-
-            .product-card__lens,
-            .product-card__heart,
-            .product-card__basket {
-                transform: scale(0.9);
-            }
-        }
-
         &:focus {
 
             .product-card__lens,
             .product-card__heart,
             .product-card__basket {
                 fill: $blue500;
+            }
+        }
+
+        &:active {
+
+            .product-card__lens,
+            .product-card__heart,
+            .product-card__basket {
+                transform: scale(0.9);
             }
         }
     }

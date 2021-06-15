@@ -11,13 +11,16 @@
         object-fit: cover;
     }
 
-    @import './components/menu';
-
     .user-nav {
         display: flex;
 
         &__search {
             background-color: $blue300;
+
+
+            &:hover {
+                background-color: $white300;
+            }
 
             &:focus {
                 background-color: $blue400;
@@ -26,14 +29,14 @@
             &:active {
                 background-color: $white400;
             }
-
-            &:hover {
-                background-color: $white300;
-            }
         }
 
         &__menu {
             background-color: $white300;
+
+            &:hover {
+                background-color: $blue400;
+            }
 
             &:focus {
                 background-color: $blue500;
@@ -43,9 +46,6 @@
                 background-color: $blue300;
             }
 
-            &:hover {
-                background-color: $blue400;
-            }
         }
 
         &__cart {
@@ -112,17 +112,17 @@
             height: 50px;
             width: 90px;
             background-color: $orange500;
-            
-            &:active {
-                background-color: $blue300;
+
+            &:hover {
+                background-color: $orange300;
             }
 
             &:focus {
                 background-color: $blue400;
             }
 
-            &:hover {
-                background-color: $orange300;
+            &:active {
+                background-color: $blue300;
             }
         }
 

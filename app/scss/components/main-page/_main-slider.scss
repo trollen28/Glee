@@ -45,18 +45,18 @@
     @include lines-5;
   }
 
-  &__link{
+  &__link {
 
-    &:hover{
+    &:hover {
       background-color: $blue400;
     }
 
-    &:active{
-      background-color: $blue300;
+    &:focus {
+      background-color: $blue500;
     }
 
-    &:focus{
-      background-color: $blue500;
+    &:active {
+      background-color: $blue300;
     }
   }
 
@@ -99,13 +99,14 @@
         transform: scale(1.2);
       }
 
+      &:focus {
+        background-color: $white;
+      }
+
       &:active {
         transform: scale(1);
       }
 
-      &:focus {
-        background-color: $white;
-      }
     }
   }
 

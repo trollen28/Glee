@@ -84,17 +84,16 @@
             fill: $blue400;
         }
 
-
         &:hover {
             background-color: $orange500;
         }
 
-        &:active {
-            background-color: $blue300;
-        }
-
         &:focus {
             background-color: $orange300;
+        }
+
+        &:active {
+            background-color: $blue300;
         }
     }
 }

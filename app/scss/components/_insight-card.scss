@@ -27,12 +27,12 @@
       background-color: $white350;
     }
 
-    &:active {
-      background-color: $white650;
-    }
-
     &:focus {
       background-color: $orange300;
+    }
+
+    &:active {
+      background-color: $white650;
     }
   }
 
