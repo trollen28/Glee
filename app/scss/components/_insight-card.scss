@@ -36,7 +36,7 @@
     }
   }
 
-  &__news {
+  &__category {
     display: block;
     position: relative;
     max-width: 100px;
@@ -51,7 +51,7 @@
     background-color: $white300;
   }
 
-  &__text {
+  &__title {
     max-width: 310px;
     padding: 0 3px;
     margin-bottom: 15px;
@@ -78,17 +78,33 @@
     color: $blue650;
     position: relative;
     padding-left: 20px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 15px;
+      height: 15px;
+      left: 0;
+    }
   }
 
   &__date {
     margin-right: 30px;
+
+    &::before {
+      background-image: url(../images/sprite.svg#calendar);
+    }
   }
 
-  &__icon {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    bottom: 3px;
-    left: 0;
+  &__author {
+
+    &::before {
+      background-image: url(../images/sprite.svg#person);
+    }
   }
 }

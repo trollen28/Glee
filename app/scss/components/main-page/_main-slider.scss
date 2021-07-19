@@ -22,9 +22,16 @@
     height: 820px;
     justify-content: center;
   }
+  
+  &__images{
+    max-width: 640px;
+    height: 320px;
+  }
 
   &__img {
-    object-fit: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 
   &__name {

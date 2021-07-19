@@ -2,21 +2,6 @@
 
   padding-bottom: 120px;
 
-  &__card {
-    padding: 40px 35px;
-    overflow: hidden;
-    background-color: $white250;
-  }
-
-  &__wrap {
-    height: 165px;
-    width: 300px;
-  }
-
-  &__link {
-    z-index: 2;
-  }
-
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -24,38 +9,8 @@
     margin-bottom: 120px;
   }
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 85px;
-    width: 190px;
-    margin: 0;
-  }
+  .video {
 
-  &__image {
-    position: absolute;
-    width: unset;
-    height: unset;
-    right: -85px;
-    bottom: 30px;
-  }
-
-  &__image--position {
-    right: 40px;
-  }
-
-  &__name {
-    @include lines-2;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 15px;
-    font-weight: $DMsans700;
-    color: $white700;
-  }
-
-  &__video {
     position: relative;
     max-width: 1920px;
     height: 500px;
@@ -66,69 +21,72 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-  }
 
-  &__popup {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
+    &__popup {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
 
-    &:hover {
-      .design__circle-2,
-      .design__play{
-        fill: $orange500;
+      &:hover {
+
+        .video__circle-2,
+        .video__play {
+          fill: $orange500;
+        }
+      }
+
+      &:focus {
+
+        .video__circle-2,
+        .video__play {
+          fill: $blue400;
+        }
+      }
+
+      &:active {
+
+        .video__circle-2,
+        .video__play {
+          fill: $blue500;
+        }
       }
     }
 
-    &:focus {
-      .design__circle-2,
-      .design__play{
-        fill: $blue400;
-      }
+
+    &__circle-1 {
+      width: 98px;
+      height: 98px;
+      z-index: 2;
     }
 
-    &:active {
-      .design__circle-2,
-      .design__play{
-        fill: $blue500;
-      }
+    &__circle-2 {
+      width: 128px;
+      height: 128px;
+      opacity: 0.4;
+      z-index: 1;
     }
-  }
 
+    &__circle-1,
+    &__circle-2,
+    &__play {
+      position: absolute;
+      fill: $white300;
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: fill 0.3s;
+    }
 
-  &__circle-1 {
-    width: 98px;
-    height: 98px;
-    z-index: 2;
-  }
-
-  &__circle-2 {
-    width: 128px;
-    height: 128px;
-    opacity: 0.4;
-    z-index: 1;
-  }
-
-  &__circle-1,
-  &__circle-2,
-  &__play {
-    position: absolute;
-    fill: $white300;
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: fill 0.3s;
-  }
-
-  &__play {
-    width: 22px;
-    height: 25px;
-    fill: $white;
-    z-index: 5;
+    &__play {
+      width: 22px;
+      height: 25px;
+      fill: $white;
+      z-index: 5;
+    }
   }
 }

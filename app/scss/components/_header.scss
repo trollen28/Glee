@@ -1,18 +1,130 @@
 .header {
     padding: 45px 0;
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    @include r($w1024) {
+        padding: 8px 0;
+    }
+
+    .menu {
+
+        @include r($w1024) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: lighten($orange500, 10%);
+            transition: transform 0.3s;
+            transform: translateY(-200%);
+
+            &__item {
+                margin-right: 0;
+                width: 100%;
+                text-align: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 22px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+
+            &__link {
+                display: block;
+                font-size: 26px;
+            }
+
+            &--active {
+                z-index: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @include r($w639) {
+
+            &__item {
+
+                &:not(:last-child) {
+                    margin-bottom: 18px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+
+        }
+}
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include r($w639) {
+                justify-content: space-around;
+            }
+        }
+    
+
+    .logo {
+        display: block;
     }
 
     .logo__img {
         object-fit: cover;
     }
 
+    .mobile__lines {
+        width: 32px;
+        height: 20px;
+        fill: $blue600;
+    }
+
+    .mobile__btn {
+        background-color: $orange500;
+        transition: background-color 0.3s;
+        display: none;
+        z-index: 2;
+        transition: transform 0.3s;
+
+        &:hover {
+            background-color: lighten($orange500, 4%);
+        }
+
+        &:focus {
+            background-color: darken($orange500, 15%);
+        }
+
+        &:active {
+            background-color: darken($orange500, 1%);
+        }
+
+        &--active {
+            transform: rotatez(90deg);
+        }
+
+        @include r($w1024) {
+            display: flex;
+        }
+    }
+
     .user-nav {
         display: flex;
+
+        @include r($w639) {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            left: 0;
+            max-width: 300px;
+            margin: 0 auto;
+        }
 
         &__search {
             background-color: $blue300;
@@ -45,7 +157,6 @@
             &:active {
                 background-color: $blue300;
             }
-
         }
 
         &__cart {
@@ -104,6 +215,10 @@
         &__search,
         &__cart {
             margin-right: 20px;
+
+            @include r($w639) {
+                margin-right: 10px;
+            }
         }
 
         &__like,

@@ -1,0 +1,45 @@
+.design-card {
+  padding: 40px 35px;
+  overflow: hidden;
+  background-color: $white250;
+
+  &__link {
+    z-index: 2;
+  }
+
+  &__wrap {
+    height: 165px;
+    width: 300px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 85px;
+    width: 190px;
+    margin: 0;
+  }
+
+  &__name {
+    @include lines-2;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: $DMsans700;
+    color: $white700;
+  }
+
+  &__image {
+    position: absolute;
+    width: unset;
+    height: unset;
+    right: -85px;
+    bottom: 30px;
+  }
+
+  &__image--position {
+    right: 40px;
+  }
+}

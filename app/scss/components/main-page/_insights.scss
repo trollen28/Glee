@@ -7,8 +7,6 @@
   }
 
   &__top,
-  &__box,
-  &__partners,
   &__content {
     display: flex;
   }
@@ -65,18 +63,20 @@
   &__content {
     justify-content: space-between;
   }
+}
 
-  &__partners {
-    position: relative;
-    height: 435px;
-    width: 100%;
-    background-color: $orange500o2;
-    margin-top: -182px;
-    z-index: -1;
-    align-items: flex-end;
-  }
+.partners {
+  position: relative;
+  height: 435px;
+  width: 100%;
+  background-color: $orange500o2;
+  margin-top: -182px;
+  display: flex;
+  align-items: flex-end;
+
 
   &__box {
+    display: flex;
     height: 255px;
     width: 100%;
     align-items: center;
@@ -85,5 +85,18 @@
   &__logo {
     object-fit: contain;
     margin: 0 auto;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $orange200;
+    }
+
+    &:focus {
+      background-color: $orange300;
+    }
+
+    &:active {
+      background-color: $orange500;
+    }
   }
 }

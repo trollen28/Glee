@@ -12,6 +12,14 @@
         padding-bottom: 70px;
         margin-bottom: 35px;
         border-bottom: 1px solid #dae4e9;
+
+        @include r($w739){
+            flex-wrap: wrap;
+        }
+
+        @include r($w400){
+            display: block;
+        }
     }
 
     &__logo {
@@ -27,6 +35,12 @@
         color: $blue700;
         text-transform: uppercase;
         margin-bottom: 20px;
+    }
+
+    &__heading {
+        @include r($w400){
+            margin-bottom: 0;
+        }
     }
 
     &__contacts,
@@ -72,6 +86,11 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
+
+        @include r($w639){
+            display: block;
+            text-align: center;
+        }
     }
 
     &__decor {
@@ -83,6 +102,12 @@
                 position: relative;
                 right: -11px;
             }
+        }
+    }
+
+    &__nav{
+        @include r($w639){
+            justify-content: center;
         }
     }
 

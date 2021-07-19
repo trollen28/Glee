@@ -84,10 +84,18 @@
                     <span class="visually-hidden">Сlicking will open a menu with additional tools</span>
                 </button>
             </div>
+
+            <button class="btn-circle mobile__btn" type="button">
+                <svg class="mobile__lines">
+                    <use xlink:href="images/sprite.svg#mobile-btn"></use>
+                </svg>
+
+                <span class="visually-hidden">Сlicking will open a head menu</span>
+            </button>
         </nav>
     </div>
 </header>
-
+<!-- 
     <main class="main">
 
         <section class="main-slider">
@@ -112,7 +120,9 @@
                 </svg>
               </a>
             </div>
-            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+            <div class="main-slider__images">
+              <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa">
+            </div>
           </div>
         </div>
       </li>
@@ -135,7 +145,9 @@
                 </svg>
               </a>
             </div>
-            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+            <div class="main-slider__images">
+              <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa">
+            </div>
           </div>
         </div>
       </li>
@@ -158,7 +170,9 @@
                 </svg>
               </a>
             </div>
-            <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa" width="640" height="264">
+            <div class="main-slider__images">
+              <img class="main-slider__img" src="images/slider/sofa.png" alt="Sofa">
+            </div>
           </div>
         </div>
       </li>
@@ -589,47 +603,47 @@
 
     <ul class="design__items">
       <li class="design__item mix cat-a">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Beat Flat Pendant Black</h3>
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Beat Flat Pendant Black</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
-            <img class="product-card__image design__image" src="images/design/1.png" alt="products" width="347"
+            <img class="product-card__image design-card__image" src="images/design/1.png" alt="products" width="347"
               height="110">
           </div>
         </article>
       </li>
 
       <li class="design__item mix cat-b">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Lampe Sur Pieds
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Lampe Sur Pieds
                 Bamboo</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
-            <img class="product-card__image design__image" src="images/design/2.png" alt="products" width="313"
+            <img class="product-card__image design-card__image" src="images/design/2.png" alt="products" width="313"
               height="108">
           </div>
         </article>
       </li>
 
       <li class="design__item mix cat-c">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Rattan Rocking Chair</h3>
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Rattan Rocking Chair</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
 
-            <img class="product-card__image design__image design__image--position" src="images/design/3.png"
+            <img class="product-card__image design-card__image design-card__image--position" src="images/design/3.png"
               alt="products" width="112" height="143">
 
           </div>
@@ -637,45 +651,45 @@
       </li>
 
       <li class="design__item mix cat-d">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Rattan Rocking Chair</h3>
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Rattan Rocking Chair</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
-            <img class="product-card__image design__image" src="images/design/4.png" alt="products" width="310"
+            <img class="product-card__image design-card__image" src="images/design/4.png" alt="products" width="310"
               height="135">
           </div>
         </article>
       </li>
 
       <li class="design__item mix cat-a cat-b">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Rattan Rocking Chair</h3>
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Rattan Rocking Chair</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
-            <img class="product-card__image design__image design__image--position" src="images/design/5.png"
+            <img class="product-card__image design-card__image design-card__image--position" src="images/design/5.png"
               alt="products" width="142" height="178">
           </div>
         </article>
       </li>
 
       <li class="design__item mix cat-a cat-c">
-        <article class="product-card design__card">
-          <a class="product-card__link design__link" href="#"></a>
-          <div class="design__wrap">
-            <div class="product-card__inner design__inner">
-              <h3 class="product-card__name design__name">Lampe Sur Pieds Bamboo</h3>
+        <article class="product-card design-card">
+          <a class="product-card__link design-card__link" href="#"></a>
+          <div class="design-card__wrap">
+            <div class="product-card__inner design-card__inner">
+              <h3 class="product-card__name design-card__name">Lampe Sur Pieds Bamboo</h3>
 
-              <p class="product-card__price">Classic</p>
+              <p class="product-card__price design-card__type">Classic</p>
             </div>
-            <img class="product-card__image design__image" src="images/design/6.png" alt="products" width="417"
+            <img class="product-card__image design-card__image" src="images/design/6.png" alt="products" width="417"
               height="110">
           </div>
         </article>
@@ -683,17 +697,17 @@
     </ul>
   </div>
 
-  <div class="design__video" style="background-image: url(images/video-bg.jpg);">
-    <a class="design__popup" href="https://youtu.be/azaohJAfzko" data-fancybox>
-      <svg class="design__play">
+  <div class="video" style="background-image: url(images/video-bg.jpg);">
+    <a class="video__popup" href="https://youtu.be/azaohJAfzko" data-fancybox>
+      <svg class="video__play">
         <use xlink:href="images/sprite.svg#video-play"></use>
       </svg>
 
-      <svg class="design__circle-1">
+      <svg class="video__circle-1">
         <use xlink:href="images/sprite.svg#video-sircle-1"></use>
       </svg>
 
-      <svg class="design__circle-2">
+      <svg class="video__circle-2">
         <use xlink:href="images/sprite.svg#video-sircle-2"></use>
       </svg>
     </a>
@@ -723,25 +737,19 @@
             <img class="insight-card__img" src="images/insights/1.jpg" alt="Design example" width="370" height="250">
 
             <div class="insight-card__inner">
-              <span class="insight-card__news">News</span>
+              <span class="insight-card__category">News</span>
 
-              <div class="insight-card__text">
-                <p>Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              </div>
+              <h3 class="insight-card__title">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </h3>
 
               <div class="insight-card__bottom">
-                <div class="insight-card__date">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  28 JANUARY, 2020
-                </div>
+                <time class="insight-card__date">
+                  28 january, 2020
+                </time>
 
                 <div class="insight-card__author">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  BY ADMIN
+                  by admin
                 </div>
               </div>
             </div>
@@ -755,25 +763,19 @@
             <img class="insight-card__img" src="images/insights/2.jpg" alt="Design example" width="370" height="250">
 
             <div class="insight-card__inner">
-              <span class="insight-card__news">News</span>
+              <span class="insight-card__category">News</span>
 
-              <div class="insight-card__text">
-                <p>Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-              </div>
+              <h3 class="insight-card__title">
+                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              </h3>
 
               <div class="insight-card__bottom">
-                <div class="insight-card__date">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  28 JANUARY, 2020
-                </div>
+                <time class="insight-card__date">
+                  28 january, 2020
+                </time>
 
                 <div class="insight-card__author">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  BY ADMIN
+                  by admin
                 </div>
               </div>
             </div>
@@ -787,25 +789,19 @@
             <img class="insight-card__img" src="images/insights/3.jpg" alt="Design example" width="370" height="250">
 
             <div class="insight-card__inner">
-              <span class="insight-card__news">News</span>
+              <span class="insight-card__category">News</span>
 
-              <div class="insight-card__text">
-                <p>Rncididunt ut labore et dolore magna aliqua. Ut enim</p>
-              </div>
+              <h3 class="insight-card__title">
+                Rncididunt ut labore et dolore magna aliqua. Ut enim
+              </h3>
 
               <div class="insight-card__bottom">
-                <div class="insight-card__date">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  28 JANUARY, 2020
-                </div>
+                <time class="insight-card__date">
+                  28 january, 2020
+                </time>
 
                 <div class="insight-card__author">
-                  <svg class="insight-card__icon">
-                    <use xlink:href="images/sprite.svg#time"></use>
-                  </svg>
-                  BY ADMIN
+                  by admin
                 </div>
               </div>
             </div>
@@ -815,37 +811,49 @@
     </div>
   </div>
 
-  <div class="insights__partners">
+  <div class="partners">
     <div class="container">
-      <ul class="insights__box">
-        <li class="insights__wrap">
-          <img class="insights__logo" src="images/partners/partner-1.png" alt="partner logo" width="82" height="90">
+      <ul class="partners__box">
+        <li class="partners__wrap">
+          <a class="partners__link" href="#">
+            <img class="partners__logo" src="images/partners/partner-1.png" alt="partner logo" width="82" height="90">
+          </a>
         </li>
 
-        <li class="insights__wrap">
-          <img class="insights__logo" src="images/partners/partner-2.png" alt="partner logo" width="151" height="90">
+        <li class="partners__wrap">
+          <a class="partners__link" href="#">
+            <img class="partners__logo" src="images/partners/partner-2.png" alt="partner logo" width="151" height="90">
+          </a>
         </li>
 
-        <li class="insights__wrap">
-          <img class="insights__logo" src="images/partners/partner-3.png" alt="partner logo" width="150" height="90">
-        </li>
-        
-        <li class="insights__wrap">
-          <img class="insights__logo" src="images/partners/partner-4.png" alt="partner logo" width="167" height="90">
+        <li class="partners__wrap">
+          <a class="partners__link" href="#">
+            <img class="partners__logo" src="images/partners/partner-3.png" alt="partner logo" width="150" height="90">
+          </a>
         </li>
 
-        <li class="insights__wrap">
-          <img class="insights__logo" src="images/partners/partner-5.png" alt="partner logo" width="87" height="90">
+        <li class="partners__wrap">
+          <a class="partners__link" href="#">
+            <img class="partners__logo" src="images/partners/partner-4.png" alt="partner logo" width="167" height="90">
+          </a>
+        </li>
+
+        <li class="partners__wrap">
+          <a class="partners__link" href="#">
+            <img class="partners__logo" src="images/partners/partner-5.png" alt="partner logo" width="87" height="90">
+          </a>
         </li>
       </ul>
     </div>
   </div>
-  </div>
 </section>
 
     </main>
-
+-->
     <footer class="footer">
+    <section>
+        <h2 class="visually-hidden">Footer title</h2>
+    </section>
     <div class="container">
         <ul class="footer__top">
 
@@ -878,7 +886,7 @@
             <li class="footer__wrap">
                 <ul class="footer__services">
                     <li class="footer__item">
-                        <div class="footer__heading">Services</div>
+                        <h3 class="footer__heading">Services</h3>
                     </li>
 
                     <li class="footer__item">
@@ -906,7 +914,7 @@
             <li class="footer__wrap">
                 <ul class="footer__account">
                     <li class="footer__item">
-                        <div class="footer__heading">Account</div>
+                        <h3 class="footer__heading">Account</h3>
                     </li>
 
                     <li class="footer__item">
@@ -929,7 +937,7 @@
 
             <li class="footer__wrap">
                 <form class="form">
-                    <div class="form__heading">newsletter</div>
+                    <h3 class="form__heading">newsletter</h3>
 
                     <div class="form__text">
                         <p>
@@ -971,7 +979,7 @@
     </div>
 </footer>
 
-    <script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script> 
 </body>
 
 </html>

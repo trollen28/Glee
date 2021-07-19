@@ -1,4 +1,13 @@
 $(function () {
+
+    $('.mobile__btn').on('click', function () {
+        $('.menu').toggleClass('menu--active');
+    });
+
+    $('.mobile__btn').on('click', function () {
+        $('.mobile__btn').toggleClass('mobile__btn--active');
+    });
+
     $('.main-slider__inner').slick({
         dots: true,
         arrows: false,
@@ -7,7 +16,7 @@ $(function () {
         autoplaySpead: 5000,
     });
 
-    $('.insights__box').slick({
+    $('.partners__box').slick({
         dots: false,
         arrows: false,
         autoplay: true,
