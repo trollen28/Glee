@@ -19,11 +19,15 @@
   &__wrap {
     display: flex;
     flex-direction: column;
-    height: 820px;
     justify-content: center;
+    padding: 210px 0;
+
+    @include r($w1024) {
+      padding: 100px 0;
+    }
   }
-  
-  &__images{
+
+  &__images {
     max-width: 640px;
     height: 320px;
   }
@@ -41,6 +45,10 @@
     max-width: 470px;
     text-transform: uppercase;
     @include lines-3;
+
+    @include r($w1024) {
+      font-size: 56px;
+    }
   }
 
   &__text {
@@ -140,12 +148,17 @@
     &:not(:last-child) {
       border-right: 1px solid #e8e4df;
     }
+
+    @include r($w1024) {
+      padding: 22px 0;
+    }
   }
 
   &__descr {
     padding-left: 50px;
     position: relative;
     max-width: 275px;
+    min-height: 84px;
 
     &::before {
       content: "";
@@ -157,6 +170,14 @@
       background-position: center;
       left: -30px;
       top: 7px;
+
+      @include r($w1024) {
+        display: none;
+      }
+    }
+
+    @include r($w1024) {
+      padding-left: 0;
     }
   }
 
