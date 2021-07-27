@@ -3,6 +3,10 @@
   overflow: hidden;
   background-color: $white250;
 
+  @include r($w420) {
+    padding: 5px 5px 80px;
+  }
+
   &__link {
     z-index: 2;
   }
@@ -10,6 +14,11 @@
   &__wrap {
     height: 165px;
     width: 300px;
+
+    @include r($w420) {
+      width: unset;
+      max-width: 300px;
+    }
   }
 
   &__inner {
@@ -18,7 +27,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     height: 85px;
-    width: 190px;
+    max-width: 190px;
     margin: 0;
   }
 
@@ -37,6 +46,8 @@
     height: unset;
     right: -85px;
     bottom: 30px;
+
+
   }
 
   &__image--position {

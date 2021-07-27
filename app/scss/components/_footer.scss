@@ -6,6 +6,14 @@
     line-height: 1.7;
     color: $white400;
 
+    @include r($w1024){
+        padding: 40px 0 30px;;
+    }
+
+    @include r($w740){
+        padding: 25px 0 15px;;
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -13,11 +21,11 @@
         margin-bottom: 35px;
         border-bottom: 1px solid #dae4e9;
 
-        @include r($w739){
+        @include r($w740){
             flex-wrap: wrap;
         }
 
-        @include r($w400){
+        @include r($w420){
             display: block;
         }
     }
@@ -38,7 +46,7 @@
     }
 
     &__heading {
-        @include r($w400){
+        @include r($w420){
             margin-bottom: 0;
         }
     }
@@ -87,7 +95,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include r($w639){
+        @include r($w640){
             display: block;
             text-align: center;
         }
@@ -106,7 +114,7 @@
     }
 
     &__nav{
-        @include r($w639){
+        @include r($w640){
             justify-content: center;
         }
     }

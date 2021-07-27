@@ -6,6 +6,10 @@
         margin-bottom: 10px;
     }
 
+    @include r($w640) {
+        margin-bottom: 64px;
+    }
+
     .menu {
 
         @include r($w1024) {
@@ -47,7 +51,7 @@
             }
         }
 
-        @include r($w639) {
+        @include r($w640) {
 
             &__item {
 
@@ -61,17 +65,18 @@
             }
 
         }
-}
-        &__inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    }
 
-            @include r($w639) {
-                justify-content: space-around;
-            }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include r($w640) {
+            justify-content: space-around;
         }
-    
+    }
+
 
     .logo {
         display: block;
@@ -118,7 +123,7 @@
     .user-nav {
         display: flex;
 
-        @include r($w639) {
+        @include r($w640) {
             position: absolute;
             top: 70px;
             right: 0;
@@ -217,7 +222,7 @@
         &__cart {
             margin-right: 20px;
 
-            @include r($w639) {
+            @include r($w640) {
                 margin-right: 10px;
             }
         }

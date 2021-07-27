@@ -22,19 +22,42 @@ $(function () {
         autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplaySpead: 5000,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
-    var containerEl1 = document.querySelector('[data-ref="container-1"]');
-    var containerEl2 = document.querySelector('[data-ref="container-2"]');
+var containerEl1 = document.querySelector('[data-ref="container-1"]');
+var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
-    var config = {
-        controls: {
-            scope: 'local'
-        }
-    };
+var config = {
+    controls: {
+        scope: 'local'
+    }
+};
 
-    var mixer1 = mixitup(containerEl1, config);
-    var mixer1 = mixitup(containerEl2, config);
+var mixer1 = mixitup(containerEl1, config);
+var mixer1 = mixitup(containerEl2, config);
 
 });

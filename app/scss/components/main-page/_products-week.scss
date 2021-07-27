@@ -2,11 +2,41 @@
 
     padding-bottom: 100px;
 
+    @include r($w740) {
+        padding-bottom: 25px;
+    }
+
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px 40px;
         margin-bottom: 190px;
+
+        @include r($w1400) {
+            grid-template-columns: repeat(3, 270px);
+            justify-content: center;
+        }
+
+        @include r($w1024) {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
+        }
+
+        @include r($w740) {
+            margin-bottom: 25px;
+        }
+
+        @include r($w640) {
+            grid-template-columns: repeat(1, 270px);
+            grid-gap: 10px 40px;
+            justify-content: center;
+        }
+    }
+
+    .products-filter {
+        @include r($w1024) {
+            margin-bottom: 25px;
+        }
     }
 
     .mixitup-control-active {
@@ -20,6 +50,11 @@
 
     &__adds {
         display: flex;
+
+        @include r($w1400) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
     }
 
@@ -35,6 +70,24 @@
 
         &:not(:last-child) {
             margin-right: 30px;
+
+            @include r($w1400) {
+                margin-right: 0;
+                margin-bottom: 140px;
+            }
+
+            @include r($w740) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        @include r($w740) {
+            padding: 50px;
+        }
+
+        @include r($w420) {
+            padding: 15px 5px;
         }
     }
 
@@ -49,6 +102,13 @@
         left: -270px;
         top: -180px;
         object-fit: cover;
+
+        @include r($w740) {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0 auto 15px;
+        }
     }
 
     &__name {
@@ -69,6 +129,7 @@
     }
 
     &__btn {
+        position: relative;
         font-weight: $rubik500;
         color: $blue400;
         background-color: $orange200;

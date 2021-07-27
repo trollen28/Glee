@@ -2,11 +2,28 @@
 
   padding-bottom: 120px;
 
+  @include r($w740) {
+    padding-bottom: 25px;
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 35px;
     margin-bottom: 120px;
+
+    @include r($w1400) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r($w1024) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 25px;
+    }
+
+    @include r($w740) {
+      grid-gap: 10px 35px;
+    }
   }
 
   .video {
@@ -21,6 +38,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+
+    @include r($w1024) {
+      height: 400px;
+    }
+
+    @include r($w740) {
+      height: 300px;
+    }
+
+    @include r($w640) {
+      height: 250px;
+    }
 
     &__popup {
       position: absolute;
@@ -60,6 +89,11 @@
       width: 98px;
       height: 98px;
       z-index: 2;
+
+      @include r($w640) {
+        width: 70px;
+        height: 70px;
+      }
     }
 
     &__circle-2 {
@@ -67,6 +101,11 @@
       height: 128px;
       opacity: 0.4;
       z-index: 1;
+
+      @include r($w640) {
+        width: 90px;
+        height: 90px;
+      }
     }
 
     &__circle-1,

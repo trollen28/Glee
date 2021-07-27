@@ -1,6 +1,10 @@
 .main-slider {
   margin-bottom: 70px;
 
+  @include r($w1024) {
+    margin-bottom: 15px;
+  }
+
   &__inner {
     position: relative;
     background-repeat: no-repeat;
@@ -10,10 +14,21 @@
     font-weight: $rubik500;
   }
 
+  &__item {
+
+    @include r($w420) {
+      padding-bottom: 45px;
+    }
+  }
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include r($w420) {
+      display: block;
+    }
   }
 
   &__wrap {
@@ -25,11 +40,23 @@
     @include r($w1024) {
       padding: 100px 0;
     }
+
+    @include r($w640) {
+      padding: 40px 0;
+    }
+
+    @include r($w420) {
+      padding: 15px 0;
+    }
   }
 
   &__images {
     max-width: 640px;
     height: 320px;
+
+    @include r($w420) {
+      height: 180px;
+    }
   }
 
   &__img {
@@ -49,6 +76,19 @@
     @include r($w1024) {
       font-size: 56px;
     }
+
+    @include r($w740) {
+      font-size: 38px;
+    }
+
+    @include r($w640) {
+      font-size: 30px;
+    }
+
+    @include r($w420) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -58,9 +98,40 @@
     max-width: 370px;
     line-height: 1.7;
     @include lines-5;
+
+    @include r($w640) {
+      font-size: 16px;
+    }
+  }
+
+  &__name,
+  &__text {
+    margin-bottom: 40px;
+
+    @include r($w420) {
+      margin-bottom: 0px;
+    }
   }
 
   &__link {
+
+    @include r($w420) {
+      display: none;
+    }
+  }
+
+  &__link--mobile {
+    display: none;
+
+    @include r($w420) {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__link,
+  &__link--mobile {
 
     &:hover {
       background-color: $blue400;
@@ -75,15 +146,17 @@
     }
   }
 
-  &__name,
-  &__text {
-    margin-bottom: 40px;
-  }
-
   &__right {
     width: 24px;
     height: 10px;
     fill: $white;
+
+    @include r($w420) {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   .slick-dots {
@@ -92,6 +165,10 @@
     position: absolute;
     bottom: 45px;
     width: 100%;
+
+    @include r($w640) {
+      bottom: 8px;
+    }
 
     li {
       &:not(:last-child) {
@@ -135,6 +212,10 @@
     display: flex;
     align-items: baseline;
     background-color: #fef7f0;
+
+    @include r($w420) {
+      display: block;
+    }
   }
 
   &__item {
@@ -147,10 +228,19 @@
 
     &:not(:last-child) {
       border-right: 1px solid #e8e4df;
+
+      @include r($w420) {
+        border: none;
+      }
     }
 
     @include r($w1024) {
       padding: 22px 0;
+    }
+
+    @include r($w420) {
+      display: block;
+      padding: 10px 0;
     }
   }
 
@@ -177,7 +267,11 @@
     }
 
     @include r($w1024) {
-      padding-left: 0;
+      padding: 0 10px;
+    }
+
+    @include r($w420) {
+      min-height: 0;
     }
   }
 

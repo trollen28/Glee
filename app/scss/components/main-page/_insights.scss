@@ -4,6 +4,27 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 45px;
+
+    @include r($w740) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__content {
+    justify-content: space-between;
+
+    @include r($w1400) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include r($w1024) {
+      justify-content: space-between;
+    }
+
+    @include r($w740) {
+      justify-content: center;
+    }
   }
 
   &__top,
@@ -59,27 +80,16 @@
     fill: $white700;
     transition: fill 0.3s;
   }
-
-  &__content {
-    justify-content: space-between;
-  }
 }
 
 .partners {
   position: relative;
-  height: 435px;
-  width: 100%;
+  margin-top: -181px;
   background-color: $orange500o2;
-  margin-top: -182px;
-  display: flex;
-  align-items: flex-end;
+  padding: 260px 0 90px;
 
-
-  &__box {
-    display: flex;
-    height: 255px;
-    width: 100%;
-    align-items: center;
+  @include r($w1024) {
+    padding: 200px 0 35px;
   }
 
   &__logo {

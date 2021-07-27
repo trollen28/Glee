@@ -31,6 +31,10 @@
         margin-bottom: 50px;
         width: 186px;
         height: 195px;
+
+        @include r($w640) {
+            overflow: visible;
+        }
     }
 
     &__image {
@@ -48,6 +52,10 @@
         justify-content: center;
         transition: transform 0.3s;
         transform: translateY(200%);
+
+        @include r($w640) {
+            transform: translateY(58px);
+        }
     }
 
     &__btn {

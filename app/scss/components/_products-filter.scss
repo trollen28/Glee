@@ -3,9 +3,22 @@
   justify-content: center;
   margin-bottom: 75px;
 
+  @include r($w1024) {
+    margin-bottom: 25px;
+  }
+
+  @include r($w740) {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-right: 25px;
+    }
+
+    @include r($w640) {
+      margin-bottom: 10px;
     }
   }
 
