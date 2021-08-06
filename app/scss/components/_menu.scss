@@ -4,6 +4,10 @@
     &__item {
         &:not(:last-child) {
             margin-right: 35px;
+
+            @include r($w1024) {
+                margin-right: 0;
+            }
         }
     }
 

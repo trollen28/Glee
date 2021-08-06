@@ -1,0 +1,42 @@
+.breadcrumbs {
+  font-family: $rubik;
+  color: $blue650;
+  background-color: $blue300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+
+  @include r($w640) {
+    padding: 10px 0;
+  }
+
+  &__title {
+    font-weight: $rubik300;
+    line-height: 1.5;
+    font-size: 36px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 14px;
+    opacity: 0.6;
+    font-weight: $rubik400;
+    
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      &::after {
+        content: "/";
+        position: absolute;
+        right: -13px;
+        opacity: 0.6;
+      }
+    }
+  }
+}

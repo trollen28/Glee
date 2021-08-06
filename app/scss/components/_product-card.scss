@@ -8,8 +8,16 @@
     &:hover {
         transform: translateY(-5px);
 
+        @include r($w1024){
+            transform: translateY(0);
+        }
+
         .product-card__box {
             transform: translateY(0);
+
+            @include r($w1024){
+                transform: translateY(58px);
+            }
         }
     }
 
@@ -32,7 +40,7 @@
         width: 186px;
         height: 195px;
 
-        @include r($w640) {
+        @include r($w1024) {
             overflow: visible;
         }
     }
@@ -54,6 +62,10 @@
         transform: translateY(200%);
 
         @include r($w640) {
+            transform: translateY(58px);
+        }
+
+        @include r($w1024) {
             transform: translateY(58px);
         }
     }

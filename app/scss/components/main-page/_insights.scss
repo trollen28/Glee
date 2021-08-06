@@ -1,4 +1,13 @@
 .insights {
+  margin-bottom: 75px;
+
+  @include r($w1024) {
+    margin-bottom: 40px;
+  }
+
+  @include r($w740) {
+    margin-bottom: 25px;
+  }
 
   &__top {
     justify-content: space-between;
