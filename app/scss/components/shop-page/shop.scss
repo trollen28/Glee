@@ -1,0 +1,179 @@
+.shop {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    font-family: $rubik;
+    font-weight: $rubik400;
+    color: $blue600;
+  }
+
+  .filter-brand {
+
+    &__number {
+      color: $white290;
+    }
+  }
+
+  .filter-category,
+  .filter-brand {
+
+    &__label {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    &__right {
+      width: 15px;
+      height: 10px;
+    }
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    &__input {
+
+      &:checked+.filter-brand__wrap,
+      &:checked+.filter-category__wrap {
+        background-color: $blue300;
+
+        &>.filter-brand__number {
+          color: $blue600;
+        }
+      }
+
+
+    }
+  }
+
+  .filter-price {
+
+    &__pricing {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+  }
+
+  .filters-title {
+    position: relative;
+    margin-bottom: 26px;
+    font-family: $DMsans;
+    font-weight: $DMsans700;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/sprite.svg#dash);
+      width: 38px;
+      height: 2px;
+      top: 10px;
+      margin-left: 20px;
+      background-color: $white300;
+    }
+  }
+
+  .recent-card {
+    display: flex;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &__box {
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      border: 2px solid $white290;
+      background-color: $white250;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    &__img {
+      width: 95%;
+      height: 95%;
+      object-fit: contain;
+    }
+
+    &__heading,
+    &__price {
+      display: block;
+      color: $white660;
+      max-width: 180px;
+    }
+
+    &__heading {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    &__price {
+      font-size: 15px;
+    }
+
+    &__stars {
+      margin-bottom: 10px;
+    }
+  }
+
+  .filter {
+    margin-bottom: 70px;
+  }
+
+  .irs--flat .irs-line {
+    top: 5px;
+    height: 3px;
+    background-color: $white300;
+    opacity: 0.6;
+  }
+
+  .irs--flat .irs-bar {
+    top: 5px;
+    height: 4px;
+    background-color: $white300;
+  }
+
+  .irs--flat .irs-handle {
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $white300;
+  }
+
+  .irs--flat {
+    height: 15px;
+    margin-bottom: 20px;
+  }
+
+  .irs--flat .irs-handle>i:first-child,
+  .irs--flat .irs-min,
+  .irs--flat .irs-max,
+  .irs--flat .irs-from,
+  .irs--flat .irs-to,
+  .irs--flat .irs-single {
+    display: none;
+  }
+
+  .jq-ry-container {
+    padding: 0;
+  }
+
+}

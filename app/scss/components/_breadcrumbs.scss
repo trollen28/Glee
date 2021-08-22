@@ -11,6 +11,19 @@
     padding: 10px 0;
   }
 
+  &--login,
+  &--shop{
+    margin-bottom: 120px;
+
+    @include r($w1024) {
+      margin-bottom: 50px;
+    }
+
+    @include r($w740) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__title {
     font-weight: $rubik300;
     line-height: 1.5;

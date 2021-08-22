@@ -1,0 +1,50 @@
+.partners {
+  position: relative;
+  margin-top: -181px;
+  background-color: $orange500o2;
+  padding: 260px 0 90px;
+  margin-bottom: 75px;
+
+  @include r($w1024) {
+    margin-bottom: 40px;
+    padding: 200px 0 35px;
+  }
+
+  @include r($w740) {
+    margin-bottom: 25px;
+  }
+
+  &--login{
+    margin-top: 0;
+    padding: 75px 0;
+    margin-bottom: 120px;
+
+    @include r($w1024) {
+      padding: 45px 0;
+      margin-bottom: 50px;
+    }
+  
+    @include r($w740) {
+      padding: 25px 0;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__logo {
+    object-fit: contain;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $orange200;
+    }
+
+    &:focus {
+      background-color: $orange300;
+    }
+
+    &:active {
+      background-color: $orange500;
+    }
+  }
+}

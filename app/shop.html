@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <header class="header">
+  <header class="header">
     <h1 class="visually-hidden">Internet furniture store</h1>
     <div class="container container--large">
         <nav class="header__inner">
@@ -96,10 +96,10 @@
     </div>
 </header>
 
-    <main class="main">
-            <section class="breadcrumbs breadcrumbs--login">
+  <main class="main">
+    <section class="breadcrumbs breadcrumbs--shop">
   <h1 class="breadcrumbs__title">
-    Log in
+    Shop
   </h1>
 
   <ul class="breadcrumbs__list">
@@ -111,50 +111,249 @@
 
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="#">
-        Log in
+        Shop
       </a>
     </li>
   </ul>
 </section>
-            <section class="login">
-  <form class="form">
-    <label class="form__heading" for="username">
-      Username or email address *
-    </label>
-    <input class="form__username" id="username" type="text" name="username">
+    <section class="shop">
+  <div class="container">
+    <div class="shop__inner">
+      <ul class="shop__filters">
+        <li class="filter-category filter">
+          <h2 class="filters-title">
+            Category
+          </h2>
+
+          <form action="#" class="filter-category__form">
+            <label class="filter-category__label">
+              <input class="filter-category__input checkbox-hide" type="checkbox" id="input-category"
+                name="category-choose">
+
+              <div class="filter-category__wrap">
+                <span>Chair</span>
+
+                <svg class="filter-category__right">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input checkbox-hide" type="checkbox" id="input-category"
+                name="category-choose">
+
+              <div class="filter-category__wrap">
+                <span>Table</span>
+
+                <svg class="filter-category__right">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input checkbox-hide" type="checkbox" id="input-category"
+                name="category-choose">
+
+              <div class="filter-category__wrap">
+                <span>Lamp</span>
+
+                <svg class="filter-category__right">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input checkbox-hide" type="checkbox" id="input-category"
+                name="category-choose">
+
+              <div class="filter-category__wrap">
+                <span>Watch</span>
+
+                <svg class="filter-category__right">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="filter-category__label">
+              <input class="filter-category__input checkbox-hide" type="checkbox" id="input-category"
+                name="category-choose">
+
+              <div class="filter-category__wrap">
+                <span>Clock</span>
+
+                <svg class="filter-category__right">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </label>
+          </form>
+        </li>
+
+        <li class="filter-price filter">
+          <h2 class="filters-title">
+            Price
+          </h2>
+
+          <form class="filter-price__form" action="#">
+            <label class="visually-hidden" for="input-price">Select an interval for filtering the cost of goods
+            </label>
+            <input class="filter-price__input" id="input-price" type="text" name="price-range" data-type="double"
+              data-min="0" data-max="2000" data-from="200" data-to="990">
+
+            <div class="filter-price__pricing">
+              <div class="filter-price__wrap">
+                $<span class="filter-price__from"></span>.00
+              </div>
+
+              <div class="filter-price__wrap">
+                $<span class="filter-price__to"></span>.00
+              </div>
+            </div>
+          </form>
+        </li>
+
+        <li class="filter-brand filter">
+          <h2 class="filters-title">
+            Brand
+          </h2>
+
+          <form action="#" class="filter-brand__form">
+            <label class="filter-brand__label">
+              <input class="filter-brand__input checkbox-hide" type="checkbox" id="input-brand"
+                name="brand-choose">
+
+              <div class="filter-brand__wrap">
+                <span>RFL</span>
+
+                <span class="filter-brand__number">(10)</span>
+              </div>
+            </label>
+
+            <label class="filter-brand__label">
+              <input class="filter-brand__input checkbox-hide" type="checkbox" id="input-brand"
+                name="brand-choose">
+
+              <div class="filter-brand__wrap">
+                <span>Brothers</span>
+
+                <span class="filter-brand__number">(21)</span>
+              </div>
+            </label>
+
+            <label class="filter-brand__label">
+              <input class="filter-brand__input checkbox-hide" type="checkbox" id="input-brand"
+                name="brand-choose">
+
+              <div class="filter-brand__wrap">
+                <span>Regal</span>
+
+                <span class="filter-brand__number">(3)</span>
+              </div>
+            </label>
+
+            <label class="filter-brand__label">
+              <input class="filter-brand__input checkbox-hide" type="checkbox" id="input-brand"
+                name="brand-choose">
+
+              <div class="filter-brand__wrap">
+                <span>Nadia</span>
+
+                <span class="filter-brand__number">(14)</span>
+              </div>
+            </label>
+
+            <label class="filter-brand__label">
+              <input class="filter-brand__input checkbox-hide" type="checkbox" id="input-brand"
+                name="brand-choose">
+
+              <div class="filter-brand__wrap">
+                <span>Otobi</span>
+
+                <span class="filter-brand__number">(6)</span>
+              </div>
+            </label>
+          </form>
+        </li>
+
+        <li class="shop__recent">
+          <h2 class="filters-title">
+            Recent products
+          </h2>
+
+          <div class="recent-card">
+            <div class="recent-card__box">
+              <img class="recent-card__img" src="images/recent-products/lamp1.png" alt="lamp">
+            </div>
+
+            <div class="recent-card__content">
+              <span class="recent-card__heading">
+                Pendant lamp
+              </span>
+
+              <div class="recent-card__stars" data-rateyo-rating="5">
+
+              </div>
+
+              <span class="recent-card__price">
+                23$
+              </span>
+            </div>
+          </div>
+
+          <div class="recent-card">
+            <div class="recent-card__box">
+              <img class="recent-card__img" src="images/recent-products/lamp2.png" alt="lamp">
+            </div>
+
+            <div class="recent-card__content">
+              <span class="recent-card__heading">
+                Pendant lamp
+              </span>
+
+              <div class="recent-card__stars" data-rateyo-rating="2.5">
+
+              </div>
+
+              <span class="recent-card__price">
+                23$
+              </span>
+            </div>
+          </div>
+
+          <div class="recent-card">
+            <div class="recent-card__box">
+              <img class="recent-card__img" src="images/recent-products/lamp3.png" alt="lamp">
+            </div>
+
+            <div class="recent-card__content">
+              <span class="recent-card__heading">
+                Pendant lamp
+              </span>
+
+              <div class="recent-card__stars" data-rateyo-rating="4.5">
+
+              </div>
+
+              <span class="recent-card__price">
+                23$
+              </span>
+            </div>
+          </div>
 
 
-    <label class="form__heading" for="password">
-      Password *
-    </label>
-    <input class="form__password" id="password" type="password" name="password">
+        </li>
+      </ul>
+      <div class="shop__content">
 
-
-    <button class="form__login" type="submit">
-      Login
-    </button>
-
-    <div class="form__wrap">
-      <label class="form__save">
-        <input class="form__checkbox" type="checkbox" name="remember">
-        Remember me
-      </label>
-
-      <a class="form__link" href="#">
-        Lost your password?
-      </a>
+      </div>
     </div>
-
-    <span class="form__desc">
-      Not registered? No problem
-    </span>
-
-    <a class="form__create" href="#">
-      Create an account
-    </a>
-  </form>
+  </div>
 </section>
-            
+    
   <section class="partners partners--login">
     <div class="container">
       <ul class="partners__box">
@@ -190,9 +389,9 @@
       </ul>
     </div>
   </section>
-    </main>
+  </main>
 
-    <footer class="footer">
+  <footer class="footer">
     <section>
         <h2 class="visually-hidden">Footer title</h2>
     </section>
@@ -321,7 +520,7 @@
     </div>
 </footer>
 
-    <script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
