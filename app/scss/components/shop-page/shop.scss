@@ -14,6 +14,49 @@
     color: $blue600;
   }
 
+  &__content{
+    width: 100%;
+  }
+
+  &__sort {
+    font-weight: $DMsans400;
+    color: $blue600;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid $blue300;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__view{
+    margin-right: 25px;
+  }
+
+  &__grid,
+  &__list {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__grid{
+    margin-right: 10px;
+  }
+
+  &__btn-grid,
+  &__btn-list {
+    width: 20px;
+    height: 20px;
+    fill: $white300;
+  }
+
+  &__items{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 30px;
+    margin-bottom: 0;
+  }
+
   .filter-brand {
 
     &__number {
@@ -53,8 +96,6 @@
           color: $blue600;
         }
       }
-
-
     }
   }
 
@@ -90,9 +131,18 @@
   .recent-card {
     display: flex;
     width: 100%;
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 24px;
+    }
+
+    &__link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
 
     &__box {
