@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    margin-right: 15px;
+  }
+
+  &__link {
+    font-family: $rubik;
+    font-weight: $rubik400;
+    color: $blue600;
+    font-size: 16px;
+    padding: 14px 18px;
+    border: 1px solid $white300;
+  }
+}

@@ -14,7 +14,7 @@
     color: $blue600;
   }
 
-  &__content{
+  &__content {
     width: 100%;
   }
 
@@ -29,7 +29,7 @@
     margin-bottom: 15px;
   }
 
-  &__view{
+  &__view {
     margin-right: 25px;
   }
 
@@ -40,7 +40,7 @@
     cursor: pointer;
   }
 
-  &__grid{
+  &__grid {
     margin-right: 10px;
   }
 
@@ -49,12 +49,126 @@
     width: 20px;
     height: 20px;
     fill: $white300;
+    transition: fill 0.3s;
+
+    &--active {
+      fill: $orange500;
+    }
   }
 
-  &__items{
+  &__items {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 30px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
+
+    &--list {
+      display: block;
+    }
+
+    .product-card__stars,
+    .product-card__descr,
+    .btn-list {
+      display: none;
+    }
+
+    &.shop__items--list {
+
+      &+.pagination {
+        justify-content: left;
+      }
+
+      .products-week__item {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .product-card {
+        display: flex;
+        box-shadow: none;
+        padding: 0;
+
+        &:hover {
+          transform: translateY(0);
+        }
+
+        &__inner {
+          width: 370px;
+          height: 500px;
+          padding: 25px;
+          margin-right: 55px;
+          margin-bottom: 0;
+          background-color: $white200;
+          border: 2px solid $white250;
+        }
+
+        &__box {
+          display: none;
+        }
+
+        &__name,
+        &__price,
+        &__descr {
+          font-family: $rubik;
+          font-weight: $rubik400;
+          font-size: 40px;
+          color: $white660;
+          margin-bottom: 25px;
+          text-align: left;
+        }
+
+        &__info {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          max-width: 415px;
+          position: relative;
+          z-index: 2;
+        }
+
+        &__stars {
+          display: block;
+          margin-bottom: 40px;
+        }
+
+        &__price {
+          font-size: 30px;
+          margin-bottom: 35px;
+          text-align: start;
+        }
+
+        &__descr {
+          display: block;
+          text-align: left;
+          font-size: 16px;
+          color: $blue600;
+          margin-bottom: 35px;
+          @include lines-5;
+        }
+
+        &__square-btns {
+          display: flex;
+        }
+
+        &__basket,
+        &__heart {
+          width: 25px;
+          height: 25px;
+        }
+
+        &__link {
+          z-index: 1;
+        }
+
+        .btn-list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .filter-brand {
