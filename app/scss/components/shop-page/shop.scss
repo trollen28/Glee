@@ -1,8 +1,31 @@
 .shop {
   margin-bottom: 120px;
 
+  @include r($w640) {
+    margin-bottom: 50px;
+  }
+
   &__inner {
     display: flex;
+    position: relative;
+
+    @include r($w1024) {
+      flex-direction: column;
+    }
+  }
+
+  &__filter-btn{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprite.svg#filter-icon);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include r($w1024) {
+      display: block;
+    }
   }
 
   &__filters {
@@ -12,6 +35,29 @@
     font-family: $rubik;
     font-weight: $rubik400;
     color: $blue600;
+
+    @include r($w1024) {
+      background-color: $white250;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      padding: 50px 200px;
+      display: none;
+      margin-bottom: 30px;
+    }
+
+    @include r($w740) {
+      padding: 50px 100px;
+    }
+
+    @include r($w640) {
+      padding: 30px 70px;
+    }
+
+    @include r($w420) {
+      padding: 15px;
+    }
+
   }
 
   &__content {
@@ -22,7 +68,7 @@
     font-weight: $DMsans400;
     color: $blue600;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     border-bottom: 1px solid $blue300;
     width: 100%;
     padding-bottom: 5px;
@@ -46,8 +92,8 @@
 
   &__btn-grid,
   &__btn-list {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: $white300;
     transition: fill 0.3s;
 
@@ -60,6 +106,16 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 30px;
     margin-bottom: 100px;
+
+    @include r($w1400) {
+      grid-template-columns: repeat(2, 270px);
+      grid-gap: 30px 50px;
+    }
+
+    @include r($w640) {
+      grid-template-columns: repeat(1, 270px);
+      grid-gap: 30px 30px;
+    }
 
     &--list {
       display: block;
@@ -81,6 +137,12 @@
         &:not(:last-child) {
           margin-bottom: 40px;
         }
+
+        @include r($w640) {
+          .product-card{
+            display: block;
+          }
+        }
       }
 
       .product-card {
@@ -88,18 +150,27 @@
         box-shadow: none;
         padding: 0;
 
+        @include r($w740) {
+          font-size: 28px;
+        }
+
         &:hover {
           transform: translateY(0);
         }
 
         &__inner {
-          width: 370px;
+          max-width: 370px;
+          width: 100%;
           height: 500px;
           padding: 25px;
           margin-right: 55px;
           margin-bottom: 0;
           background-color: $white200;
           border: 2px solid $white250;
+
+          @include r($w1400) {
+            height: 300px;
+          }
         }
 
         &__box {
@@ -115,6 +186,12 @@
           color: $white660;
           margin-bottom: 25px;
           text-align: left;
+        }
+
+        &__name{
+          @include r($w740) {
+            font-size: 28px;
+          }
         }
 
         &__info {
@@ -135,6 +212,10 @@
           font-size: 30px;
           margin-bottom: 35px;
           text-align: start;
+
+          @include r($w740) {
+            font-size: 26px;
+          }
         }
 
         &__descr {

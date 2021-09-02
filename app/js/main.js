@@ -34,6 +34,10 @@ $(function () {
         $('.shop__btn-grid').removeClass('shop__btn-grid--active');
     });
 
+    $('.shop__filter-btn').on('click', function () {
+        $('.shop__filters').slideToggle();
+    });
+
     $('.main-slider__inner').slick({
         dots: true,
         arrows: false,
