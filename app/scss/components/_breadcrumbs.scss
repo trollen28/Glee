@@ -28,6 +28,14 @@
     font-weight: $rubik300;
     line-height: 1.5;
     font-size: 36px;
+
+    @include r($w640) {
+      font-size: 30px;
+    }
+
+    @include r($w420) {
+      font-size: 24px;
+    }
   }
 
   &__list {

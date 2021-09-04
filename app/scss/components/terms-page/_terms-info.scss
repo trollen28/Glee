@@ -1,0 +1,76 @@
+.terms {
+  padding: 115px 0;
+
+  @include r($w1024) {
+    padding: 60px 0;
+  }
+
+  @include r($w640) {
+    padding: 40px 0;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+    font-family: $rubik;
+    font-weight: $rubik500;
+    color: $blue600;
+    font-size: 24px;
+
+    @include r($w640) {
+      font-size: 22px;
+    }
+  }
+
+  &__text,
+  &__list {
+    font-family: $rubik;
+    font-weight: $rubik400;
+    color: $blue600;
+    font-size: 16px;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 70px;
+
+      @include r($w1024) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__list {
+    counter-reset: list;
+    padding-left: 35px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+
+      @include r($w1024) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &::before {
+      counter-increment: list 1;
+      content: "0"counter(list) ".";
+      position: absolute;
+      left: 0;
+    }
+
+    &:nth-child(n+10) {
+      &::before {
+        content: counter(list) ".";
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
