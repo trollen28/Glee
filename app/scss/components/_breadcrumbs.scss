@@ -60,4 +60,18 @@
       }
     }
   }
+
+  &__link{
+    &:hover {
+      color: $blue700;
+    }
+
+    &:focus{
+      color: $white650;
+    }
+
+    &:active{
+      color: $orange500;
+    }
+  }
 }

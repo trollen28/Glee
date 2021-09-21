@@ -1,0 +1,155 @@
+.team {
+  margin-bottom: 120px;
+
+  @include r($w1024) {
+    margin-bottom: 60px;
+  }
+
+  @include r($w640) {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+
+    @include r($w1024) {
+      flex-direction: column;
+    }
+  }
+
+  &__descr {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 100px;
+
+    @include r($w1400) {
+      margin-right: 50px;
+    }
+
+    @include r($w640) {
+      margin-right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    font-family: $rubik;
+    font-weight: $rubik400;
+    color: $blue400;
+  }
+
+  &__join {
+    padding: 18px 25px 18px 18px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $blue400;
+    }
+
+    &:focus{
+      background-color: $orange300;
+    }
+
+    &:active{
+      background-color: $white400;
+    }
+
+    @include r($w1024) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__right{
+    width: 24px;
+    height: 10px;
+    fill: $white;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+
+    @include r($w640) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+  }
+
+  &__img {
+    max-width: 370px;
+    width: 100%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 330px;
+    width: 100%;
+    padding: 26px 22px;
+    background-color: $white;
+    margin-top: -50px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+
+
+  &__name,
+  &__subtitle {
+    display: block;
+  }
+
+  &__name {
+    font-size: 22px;
+    color: $blue400;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-family: $rubik;
+    font-weight: $rubik400;
+    color: $white500;
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__link {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $white250;
+
+    &:hover {
+      background-color: $blue400;
+    }
+
+    &:focus{
+      background-color: $orange300;
+    }
+
+    &:active{
+      background-color: $white400;
+    }
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__icon {
+    fill: $white350;
+    height: 18px;
+    width: 25px;
+  }
+}
